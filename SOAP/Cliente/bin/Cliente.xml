@@ -91,6 +91,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:Cliente.Home._lblResultadoComprobar">
+<summary>
+Control lblResultadoComprobar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:Cliente.Home._lblResultado">
 <summary>
 Control lblResultado.
@@ -127,9 +136,27 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:Cliente.Home._lblResultadoNombres">
+<summary>
+Control lblResultadoNombres.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:Cliente.Home._lblNombres">
 <summary>
 Control lblNombres.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Cliente.Home._lblResultadoApellidos">
+<summary>
+Control lblResultadoApellidos.
 </summary>
 <remarks>
 Campo generado automáticamente.

@@ -68,6 +68,15 @@ Partial Public Class Home
     Protected WithEvents btnComprobar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control lblResultadoComprobar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblResultadoComprobar As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control lblResultado.
     '''</summary>
     '''<remarks>
@@ -104,6 +113,15 @@ Partial Public Class Home
     Protected WithEvents btnDesplegar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control lblResultadoNombres.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblResultadoNombres As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control lblNombres.
     '''</summary>
     '''<remarks>
@@ -111,6 +129,15 @@ Partial Public Class Home
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblNombres As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lblResultadoApellidos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblResultadoApellidos As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control lblApellidos.

@@ -19,6 +19,7 @@
             <hr />
             <asp:Button ID="btnComprobar" Text="Comprobar" runat="server" />
             <hr />
+            <asp:Label ID="lblResultadoComprobar" Text="Resultado: " runat="server"  ></asp:Label>
             <asp:Label ID="lblResultado" runat="server" />
             <hr />
             <h1>Prueba metodo nombre</h1>
@@ -26,9 +27,11 @@
             <asp:TextBox ID="txtNombre" runat="server" Width="440px" />
             <asp:Button ID="btnDesplegar" Text="Desplegar" runat="server" />
             <hr />
-            <asp:Label ID="lblNombres" Text="Nombres: " runat="server" ></asp:Label>
+            <asp:Label ID="lblResultadoNombres" Text="Nombres: " runat="server" ></asp:Label>
+            <asp:Label ID="lblNombres" runat="server" ></asp:Label>
             <hr />
-            <asp:Label ID="lblApellidos" Text="Apellidos: " runat="server" ></asp:Label>
+            <asp:Label ID="lblResultadoApellidos" Text="Apellidos: " runat="server" ></asp:Label>
+            <asp:Label ID="lblApellidos" runat="server" ></asp:Label>
 
         </div>
     </form>
