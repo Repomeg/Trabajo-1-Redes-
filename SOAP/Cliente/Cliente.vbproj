@@ -112,7 +112,6 @@
     <None Include="Connected Services\Servicios\Servicio.disco" />
     <Content Include="Principal.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\Servicios\Reference.vb">
@@ -144,13 +143,6 @@
     </Compile>
     <Compile Include="Principal.aspx.vb">
       <DependentUpon>Principal.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
