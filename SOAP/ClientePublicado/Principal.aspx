@@ -10,8 +10,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <!-- <div>
-        </div>  -->
         <div class="sec2">
             <div class="container">
                 <div class ="content">  
