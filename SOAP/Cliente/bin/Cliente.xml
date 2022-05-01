@@ -46,27 +46,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Principal._LabelRut">
-<summary>
-Control LabelRut.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:Cliente.Principal._TextBoxRut">
 <summary>
 Control TextBoxRut.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Principal._LabelDigito">
-<summary>
-Control LabelDigito.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -91,27 +73,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Principal._LabelResultadoComprobar">
-<summary>
-Control LabelResultadoComprobar.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:Cliente.Principal._LabelResultado">
 <summary>
 Control LabelResultado.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Principal._LabelNombreCompleto">
-<summary>
-Control LabelNombreCompleto.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -136,27 +100,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Principal._LabelResultadoNombres">
-<summary>
-Control LabelResultadoNombres.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:Cliente.Principal._LabelNombres">
 <summary>
 Control LabelNombres.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Principal._LabelResultadoApellidos">
-<summary>
-Control LabelResultadoApellidos.
 </summary>
 <remarks>
 Campo generado automáticamente.

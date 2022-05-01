@@ -111,6 +111,7 @@
     </None>
     <None Include="Connected Services\Servicios\Servicio.disco" />
     <Content Include="Principal.aspx" />
+    <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
