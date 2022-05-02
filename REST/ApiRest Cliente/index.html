@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Cliente Rest</title>
+  </head>
+  <body class="">
+    <div class="fondo font">
+      <div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-light border-danger">
+          <div class="container d-flex ">
+              <div >
+                  <a href="https://www.utem.cl">
+                      <img src="img/utem.png" alt="">
+                  </a>
+              </div class="container d-flex">
+              <div>
+                  <h1>REST API Usuario</h1>
+              </div>
+              <div>
+                  <a href="https://github.com/Repomeg/Trabajo-1-Redes-" class="container-fluid">
+                      <img src="img/github-logo.png" alt="">
+                  </a>
+              </div>
+          </div>
+         </nav>
+      </div>
+      <br><br><br>
+      <div>
+        <div class="">
+          <div class="d-flex justify-content-center">
+              <div class="card bg-white mb-3">
+                  <div class="container mt-4 ">
+                    <h1 class="display-4">Verificador de rut</h1>
+                    <form id="formularioRut">
+                      <div class="mb-3 ">
+                        <label for="InputRut" class="form-label">Ingrese su Rut con digito verificador</label>
+                        <input type="rut" class="form-control text-dark border-danger" id="InputRut" name="InputRut" aria-describedby="RutHelp">
+                        <div id="RutHelp" class="form-text">Como por ejemplo: "12345678-9"</div>
+                      </div>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        Necesitas ayuda?
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Verificador de rut</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                              Para usar esta función, primero debe hacer click donde se indica, ingresar su rut (con guíon) y finalmente presionar en el botón "Ingresar rut"
+                            </div>
+                            <div> <img src="modalimg/Rut1.png" alt=""></div>
+                              <div>(Es importante que el formato utilizado sea sin puntos y con guíon, por ejemplo, 19650282-3)</div>
+                              Una vez presione el botón "Ingresar rut", se desplegará la información que indica si el rut ingresado es válido o no.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Salir</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center container justify-content-center my-5 text-center">
+                        <button type="submit" class="btn btn-outline-info">Ingresar rut</button>
+                      </div>
+                    </form>
+                    <div class="mt-5 " id="errorRut" >
+                      
+                    </div>
+                    <div class="mt-5" id="contenidoRut">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="card bg-white mb-3">
+                  <div class="container mt-4 ">
+                    <h1 class="display-4">Separador de nombres</h1>
+                    <form id="formularioSplit">
+                      <div class="mb-3">
+                        <label for="InputSplit" class="form-label">Ingrese Su nombre Completo</label>
+                        <input type="split" class="form-control text-dark border-danger" id="InputSplit" name="InputSplit" aria-describedby="splitHelp">
+                        <div id="splitHelp" class="form-text">Como por ejemplo: Miguel Angel Miranda Gonzales</div>
+                        <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Necesitas ayuda?
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Separador de nombres</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div>
+                              Para usar esta función, primero debe hacer click donde se indica, ingresar su nombre completo (tanto nombres como apellidos) y finalmente presionar en el botón "Ingresar nombre"
+                            </div>
+                            <div> <img src="modalimg/Nombre1.png" alt=""></div>
+                              Una vez presione el botón "Ingresar nombre", se desplegará su nombre separado por nombre y apellido.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Salir</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="d-flex justify-content-center container my-5 text-center">
+                        <button type="submit" class="btn btn-outline-info">Ingresar nombre</button>
+                      </div>
+                    </form>
+                    <div class="mt-5" id="errorSplit">
+                    </div>
+                    <div class="mt-5" id="contenidoSplit">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>
