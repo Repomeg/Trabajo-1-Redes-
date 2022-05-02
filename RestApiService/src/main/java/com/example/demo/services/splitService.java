@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 import org.springframework.stereotype.Service;
 
@@ -22,7 +23,16 @@ public class splitService {
         int end = nombresList.size()-1;
         nombresList.set(end, null);
         nombresList.set(end-1, null);
-        splitAux.setNombres(nombresList);
+
+        List<String> list = new ArrayList<String>();
+
+        for(String s : nombresList) {
+            if(s != null && s.length() > 0) {
+               list.add(s);
+            }
+        }
+
+        splitAux.setNombres(list);
 
         return splitAux;
     }
