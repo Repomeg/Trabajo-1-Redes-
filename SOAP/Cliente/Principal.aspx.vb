@@ -24,7 +24,7 @@ Public Class Principal
         Dim nombres As String = "Nombres: "
         Dim apellidos As String = "Apellidos: "
         If auxNombre.Length = 1 Then
-            LabelNombres.Text = auxNombre(0)
+            LabelNombres.Text = nombres + auxNombre(0)
             LabelApellidos.Text = ""
         Else
             For i = 0 To auxNombre.Length - 3

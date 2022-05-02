@@ -5,17 +5,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Joaquin\Desktop\Trabajo-1-Redes-\SOAP\ClientePublicado</_PublishTargetUrl>
-    <History>True|2022-05-02T04:57:16.7699778Z;True|2022-05-02T00:40:25.1980432-04:00;True|2022-05-02T00:27:10.7269579-04:00;True|2022-05-01T23:20:26.8632071-04:00;True|2022-05-01T19:08:30.7745996-04:00;True|2022-05-01T19:03:58.9313510-04:00;True|2022-05-01T13:02:26.1488514-04:00;True|2022-04-30T23:55:28.6728022-04:00;True|2022-04-30T13:30:14.8820351-04:00;</History>
+    <History>True|2022-05-02T05:31:12.1820439Z;True|2022-05-02T00:57:16.7699778-04:00;True|2022-05-02T00:40:25.1980432-04:00;True|2022-05-02T00:27:10.7269579-04:00;True|2022-05-01T23:20:26.8632071-04:00;True|2022-05-01T19:08:30.7745996-04:00;True|2022-05-01T19:03:58.9313510-04:00;True|2022-05-01T13:02:26.1488514-04:00;True|2022-04-30T23:55:28.6728022-04:00;True|2022-04-30T13:30:14.8820351-04:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Cliente.dll">
-      <publishTime>05/02/2022 00:57:16</publishTime>
+      <publishTime>05/02/2022 01:31:11</publishTime>
     </File>
     <File Include="bin/Cliente.pdb">
-      <publishTime>05/02/2022 00:57:16</publishTime>
+      <publishTime>05/02/2022 01:31:11</publishTime>
     </File>
     <File Include="bin/Cliente.xml">
-      <publishTime>05/02/2022 00:57:16</publishTime>
+      <publishTime>05/02/2022 01:31:11</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>04/30/2022 23:36:15</publishTime>
@@ -168,13 +168,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/30/2022 23:36:33</publishTime>
     </File>
     <File Include="Connected Services/Servicios/Cliente.Servicios.ArrayOfString.datasource">
-      <publishTime>05/02/2022 00:56:51</publishTime>
+      <publishTime>05/02/2022 01:30:50</publishTime>
     </File>
     <File Include="Connected Services/Servicios/Cliente.Servicios.ComprobarRutResponse.datasource">
-      <publishTime>05/02/2022 00:56:51</publishTime>
+      <publishTime>05/02/2022 01:30:50</publishTime>
     </File>
     <File Include="Connected Services/Servicios/Cliente.Servicios.MostrarNombreResponse.datasource">
-      <publishTime>05/02/2022 00:56:51</publishTime>
+      <publishTime>05/02/2022 01:30:50</publishTime>
     </File>
     <File Include="Principal.aspx">
       <publishTime>05/01/2022 23:11:18</publishTime>
