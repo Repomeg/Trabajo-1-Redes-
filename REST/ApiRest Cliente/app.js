@@ -15,9 +15,7 @@ function jsonRutGet(){
     .then(data => {
         contenidoRut.innerHTML = `
         <div class="alert alert-info text-light bg-primary" role="alert">
-        <p>Rut: ${data.rut}</p>
-        <p>Codigo verificador: ${data.verifyCode}</p>
-        <p>Validador: ${data.validate}</p>
+        <p>El RUT es: ${data.validate}</p>
         </div>
         `
     });
@@ -53,14 +51,14 @@ formularioRut.addEventListener('submit',function(e){
         })
         .then(response => {
         errorRut.innerHTML=`
-        <div class="alert alert-success text-light bg-primary" role="alert"> Se Envio Correctamente el metodo POST</div>
+        <div class="alert alert-success text-light bg-primary" role="alert">El RUT ingresado es valido</div>
         `
         jsonRutGet();
         })
         .catch(error => console.log(error));
     }
     else{
-        errorRut.innerHTML=`<div class="alert alert-danger text-light bg-primary" role="alert">Rut ingresado no tiene el formato valido</div>`
+        errorRut.innerHTML=`<div class="alert alert-danger text-light bg-primary" role="alert">Por favor, ingrese un rut valido.</div>`
     }
     
 })
@@ -123,14 +121,14 @@ formularioSplit.addEventListener('submit',function(e){
             return response;
         })
         .then(response => {
-        errorSplit.innerHTML=`<div class="alert alert-success text-light bg-primary" role="alert"> Se Envio Correctamente el metodo POST</div>
+        errorSplit.innerHTML=`<div class="alert alert-success text-light bg-primary" role="alert">El Nombre ingresado es valido.</div>
         `
         jsonSplitGet();
         })
         .catch(error => console.log(error));
     }
     else{
-        errorSplit.innerHTML=`<div class="alert alert-danger text-light bg-primary" role="alert"> El nombre debe tener un formato valido </div>`
+        errorSplit.innerHTML=`<div class="alert alert-danger text-light bg-primary" role="alert">Por favor, ingrese un nombre valido.</div>`
     }
     
 })
