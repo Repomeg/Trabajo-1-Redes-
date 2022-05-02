@@ -63,6 +63,7 @@ namespace Servicio
 			}
             else
             {
+				nombre = nombre.Trim();
 				string[] auxNombre = nombre.Split(' ');
 				int i = 0;
 				foreach (string nomb in auxNombre)

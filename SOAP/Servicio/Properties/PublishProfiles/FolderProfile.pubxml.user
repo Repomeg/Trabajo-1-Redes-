@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Joaquin\Desktop\Trabajo-1-Redes-\SOAP\ServicioPublicado</_PublishTargetUrl>
-    <History>True|2022-05-02T04:40:30.9809750Z;True|2022-05-02T00:37:57.8055504-04:00;True|2022-05-02T00:27:24.1282965-04:00;True|2022-05-01T23:19:20.1290484-04:00;True|2022-05-01T13:02:47.6461762-04:00;True|2022-04-30T23:55:59.2771827-04:00;True|2022-04-30T10:53:54.9564039-04:00;</History>
+    <History>True|2022-05-02T04:57:21.6164341Z;True|2022-05-02T00:40:30.9809750-04:00;True|2022-05-02T00:37:57.8055504-04:00;True|2022-05-02T00:27:24.1282965-04:00;True|2022-05-01T23:19:20.1290484-04:00;True|2022-05-01T13:02:47.6461762-04:00;True|2022-04-30T23:55:59.2771827-04:00;True|2022-04-30T10:53:54.9564039-04:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
@@ -159,10 +159,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/30/2022 23:36:33</publishTime>
     </File>
     <File Include="bin/Servicio.dll">
-      <publishTime>05/02/2022 00:40:30</publishTime>
+      <publishTime>05/02/2022 00:57:21</publishTime>
     </File>
     <File Include="bin/Servicio.pdb">
-      <publishTime>05/02/2022 00:40:30</publishTime>
+      <publishTime>05/02/2022 00:57:21</publishTime>
     </File>
     <File Include="Servicio.asmx">
       <publishTime>04/30/2022 23:36:33</publishTime>
