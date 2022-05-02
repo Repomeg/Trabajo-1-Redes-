@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Text.RegularExpressions;
 using System.Web.Services;
 
 namespace Servicio
@@ -55,8 +56,27 @@ namespace Servicio
 		[WebMethod]
 		public string[] MostrarNombre(string nombre)
 		{
-			string[] auxNombre = nombre.Split(' ');
-			return auxNombre;
+			if (string.IsNullOrEmpty(nombre))
+			{
+				string[] cadenaVacia = {"Ingrese un nombre"};
+				return cadenaVacia;
+			}
+            else
+            {
+				string[] auxNombre = nombre.Split(' ');
+				int i = 0;
+				foreach (string nomb in auxNombre)
+                {
+					bool Valido = Regex.IsMatch(auxNombre[i], @"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$");
+					if (Valido == false)
+					{
+						string[] cadenaNoValida = {"Nombre no Valido"};
+						return cadenaNoValida;
+					}
+					i++;
+                }
+				return auxNombre;
+			}
 		}
 	}
 }

@@ -23,17 +23,23 @@ Public Class Principal
         Dim auxNombre() As String = listaNombre.ToArray()
         Dim nombres As String = "Nombres: "
         Dim apellidos As String = "Apellidos: "
+        If auxNombre.Length = 1 Then
+            nombres &= auxNombre(0)
+            LabelNombres.Text = nombres
+            LabelApellidos.Text = ""
+        Else
+            For i = 0 To auxNombre.Length - 3
+                nombres &= auxNombre(i)
+                nombres &= " "
+            Next
+            LabelNombres.Text = nombres
 
-        For i = 0 To auxNombre.Length - 3
-            nombres &= auxNombre(i)
-            nombres &= " "
-        Next
-        LabelNombres.Text = nombres
+            For i = (auxNombre.Length - 2) To (auxNombre.Length - 1)
+                apellidos &= auxNombre(i)
+                apellidos &= " "
+            Next
+            LabelApellidos.Text = apellidos
+        End If
 
-        For i = (auxNombre.Length - 2) To (auxNombre.Length - 1)
-            apellidos &= auxNombre(i)
-            apellidos &= " "
-        Next
-        LabelApellidos.Text = apellidos
     End Sub
 End Class
