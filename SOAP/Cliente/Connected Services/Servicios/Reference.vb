@@ -11,36 +11,204 @@
 Option Strict On
 Option Explicit On
 
+Imports System
+Imports System.Runtime.Serialization
 
 Namespace Servicios
     
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
+     System.Runtime.Serialization.CollectionDataContractAttribute(Name:="ArrayOfString", [Namespace]:="http://tempuri.org/", ItemName:="string"),  _
+     System.SerializableAttribute()>  _
+    Public Class ArrayOfString
+        Inherits System.Collections.Generic.List(Of String)
+    End Class
+    
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="Servicios.IService1")>  _
-    Public Interface IService1
+     System.ServiceModel.ServiceContractAttribute(ConfigurationName:="Servicios.ServicioSoap")>  _
+    Public Interface ServicioSoap
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IService1/ComprobarRut", ReplyAction:="http://tempuri.org/IService1/ComprobarRutResponse")>  _
-        Function ComprobarRut(ByVal rut As Integer, ByVal digito As String) As Boolean
+        'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento digito del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ComprobarRut", ReplyAction:="*")>  _
+        Function ComprobarRut(ByVal request As Servicios.ComprobarRutRequest) As Servicios.ComprobarRutResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IService1/ComprobarRut", ReplyAction:="http://tempuri.org/IService1/ComprobarRutResponse")>  _
-        Function ComprobarRutAsync(ByVal rut As Integer, ByVal digito As String) As System.Threading.Tasks.Task(Of Boolean)
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ComprobarRut", ReplyAction:="*")>  _
+        Function ComprobarRutAsync(ByVal request As Servicios.ComprobarRutRequest) As System.Threading.Tasks.Task(Of Servicios.ComprobarRutResponse)
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IService1/MostrarNombre", ReplyAction:="http://tempuri.org/IService1/MostrarNombreResponse")>  _
-        Function MostrarNombre(ByVal nombre As String) As String()
+        'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento nombre del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/MostrarNombre", ReplyAction:="*")>  _
+        Function MostrarNombre(ByVal request As Servicios.MostrarNombreRequest) As Servicios.MostrarNombreResponse
         
-        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IService1/MostrarNombre", ReplyAction:="http://tempuri.org/IService1/MostrarNombreResponse")>  _
-        Function MostrarNombreAsync(ByVal nombre As String) As System.Threading.Tasks.Task(Of String())
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/MostrarNombre", ReplyAction:="*")>  _
+        Function MostrarNombreAsync(ByVal request As Servicios.MostrarNombreRequest) As System.Threading.Tasks.Task(Of Servicios.MostrarNombreResponse)
     End Interface
     
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
+    Partial Public Class ComprobarRutRequest
+        
+        <System.ServiceModel.MessageBodyMemberAttribute(Name:="ComprobarRut", [Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public Body As Servicios.ComprobarRutRequestBody
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal Body As Servicios.ComprobarRutRequestBody)
+            MyBase.New
+            Me.Body = Body
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.Runtime.Serialization.DataContractAttribute([Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class ComprobarRutRequestBody
+        
+        <System.Runtime.Serialization.DataMemberAttribute(Order:=0)>  _
+        Public rut As Integer
+        
+        <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
+        Public digito As String
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal rut As Integer, ByVal digito As String)
+            MyBase.New
+            Me.rut = rut
+            Me.digito = digito
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
+    Partial Public Class ComprobarRutResponse
+        
+        <System.ServiceModel.MessageBodyMemberAttribute(Name:="ComprobarRutResponse", [Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public Body As Servicios.ComprobarRutResponseBody
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal Body As Servicios.ComprobarRutResponseBody)
+            MyBase.New
+            Me.Body = Body
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.Runtime.Serialization.DataContractAttribute([Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class ComprobarRutResponseBody
+        
+        <System.Runtime.Serialization.DataMemberAttribute(Order:=0)>  _
+        Public ComprobarRutResult As Boolean
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal ComprobarRutResult As Boolean)
+            MyBase.New
+            Me.ComprobarRutResult = ComprobarRutResult
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
+    Partial Public Class MostrarNombreRequest
+        
+        <System.ServiceModel.MessageBodyMemberAttribute(Name:="MostrarNombre", [Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public Body As Servicios.MostrarNombreRequestBody
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal Body As Servicios.MostrarNombreRequestBody)
+            MyBase.New
+            Me.Body = Body
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.Runtime.Serialization.DataContractAttribute([Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class MostrarNombreRequestBody
+        
+        <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
+        Public nombre As String
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal nombre As String)
+            MyBase.New
+            Me.nombre = nombre
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.ServiceModel.MessageContractAttribute(IsWrapped:=false)>  _
+    Partial Public Class MostrarNombreResponse
+        
+        <System.ServiceModel.MessageBodyMemberAttribute(Name:="MostrarNombreResponse", [Namespace]:="http://tempuri.org/", Order:=0)>  _
+        Public Body As Servicios.MostrarNombreResponseBody
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal Body As Servicios.MostrarNombreResponseBody)
+            MyBase.New
+            Me.Body = Body
+        End Sub
+    End Class
+    
+    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
+     System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced),  _
+     System.Runtime.Serialization.DataContractAttribute([Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class MostrarNombreResponseBody
+        
+        <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
+        Public MostrarNombreResult As Servicios.ArrayOfString
+        
+        Public Sub New()
+            MyBase.New
+        End Sub
+        
+        Public Sub New(ByVal MostrarNombreResult As Servicios.ArrayOfString)
+            MyBase.New
+            Me.MostrarNombreResult = MostrarNombreResult
+        End Sub
+    End Class
+    
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
-    Public Interface IService1Channel
-        Inherits Servicios.IService1, System.ServiceModel.IClientChannel
+    Public Interface ServicioSoapChannel
+        Inherits Servicios.ServicioSoap, System.ServiceModel.IClientChannel
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
-    Partial Public Class Service1Client
-        Inherits System.ServiceModel.ClientBase(Of Servicios.IService1)
-        Implements Servicios.IService1
+    Partial Public Class ServicioSoapClient
+        Inherits System.ServiceModel.ClientBase(Of Servicios.ServicioSoap)
+        Implements Servicios.ServicioSoap
         
         Public Sub New()
             MyBase.New
@@ -62,20 +230,56 @@ Namespace Servicios
             MyBase.New(binding, remoteAddress)
         End Sub
         
-        Public Function ComprobarRut(ByVal rut As Integer, ByVal digito As String) As Boolean Implements Servicios.IService1.ComprobarRut
-            Return MyBase.Channel.ComprobarRut(rut, digito)
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Function Servicios_ServicioSoap_ComprobarRut(ByVal request As Servicios.ComprobarRutRequest) As Servicios.ComprobarRutResponse Implements Servicios.ServicioSoap.ComprobarRut
+            Return MyBase.Channel.ComprobarRut(request)
         End Function
         
-        Public Function ComprobarRutAsync(ByVal rut As Integer, ByVal digito As String) As System.Threading.Tasks.Task(Of Boolean) Implements Servicios.IService1.ComprobarRutAsync
-            Return MyBase.Channel.ComprobarRutAsync(rut, digito)
+        Public Function ComprobarRut(ByVal rut As Integer, ByVal digito As String) As Boolean
+            Dim inValue As Servicios.ComprobarRutRequest = New Servicios.ComprobarRutRequest()
+            inValue.Body = New Servicios.ComprobarRutRequestBody()
+            inValue.Body.rut = rut
+            inValue.Body.digito = digito
+            Dim retVal As Servicios.ComprobarRutResponse = CType(Me,Servicios.ServicioSoap).ComprobarRut(inValue)
+            Return retVal.Body.ComprobarRutResult
         End Function
         
-        Public Function MostrarNombre(ByVal nombre As String) As String() Implements Servicios.IService1.MostrarNombre
-            Return MyBase.Channel.MostrarNombre(nombre)
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Function Servicios_ServicioSoap_ComprobarRutAsync(ByVal request As Servicios.ComprobarRutRequest) As System.Threading.Tasks.Task(Of Servicios.ComprobarRutResponse) Implements Servicios.ServicioSoap.ComprobarRutAsync
+            Return MyBase.Channel.ComprobarRutAsync(request)
         End Function
         
-        Public Function MostrarNombreAsync(ByVal nombre As String) As System.Threading.Tasks.Task(Of String()) Implements Servicios.IService1.MostrarNombreAsync
-            Return MyBase.Channel.MostrarNombreAsync(nombre)
+        Public Function ComprobarRutAsync(ByVal rut As Integer, ByVal digito As String) As System.Threading.Tasks.Task(Of Servicios.ComprobarRutResponse)
+            Dim inValue As Servicios.ComprobarRutRequest = New Servicios.ComprobarRutRequest()
+            inValue.Body = New Servicios.ComprobarRutRequestBody()
+            inValue.Body.rut = rut
+            inValue.Body.digito = digito
+            Return CType(Me,Servicios.ServicioSoap).ComprobarRutAsync(inValue)
+        End Function
+        
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Function Servicios_ServicioSoap_MostrarNombre(ByVal request As Servicios.MostrarNombreRequest) As Servicios.MostrarNombreResponse Implements Servicios.ServicioSoap.MostrarNombre
+            Return MyBase.Channel.MostrarNombre(request)
+        End Function
+        
+        Public Function MostrarNombre(ByVal nombre As String) As Servicios.ArrayOfString
+            Dim inValue As Servicios.MostrarNombreRequest = New Servicios.MostrarNombreRequest()
+            inValue.Body = New Servicios.MostrarNombreRequestBody()
+            inValue.Body.nombre = nombre
+            Dim retVal As Servicios.MostrarNombreResponse = CType(Me,Servicios.ServicioSoap).MostrarNombre(inValue)
+            Return retVal.Body.MostrarNombreResult
+        End Function
+        
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Function Servicios_ServicioSoap_MostrarNombreAsync(ByVal request As Servicios.MostrarNombreRequest) As System.Threading.Tasks.Task(Of Servicios.MostrarNombreResponse) Implements Servicios.ServicioSoap.MostrarNombreAsync
+            Return MyBase.Channel.MostrarNombreAsync(request)
+        End Function
+        
+        Public Function MostrarNombreAsync(ByVal nombre As String) As System.Threading.Tasks.Task(Of Servicios.MostrarNombreResponse)
+            Dim inValue As Servicios.MostrarNombreRequest = New Servicios.MostrarNombreRequest()
+            inValue.Body = New Servicios.MostrarNombreRequestBody()
+            inValue.Body.nombre = nombre
+            Return CType(Me,Servicios.ServicioSoap).MostrarNombreAsync(inValue)
         End Function
     End Class
 End Namespace

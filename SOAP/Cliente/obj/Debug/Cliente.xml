@@ -37,7 +37,7 @@ Cliente
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
-<member name="F:Cliente.Home._form1">
+<member name="F:Cliente.Principal._form1">
 <summary>
 Control form1.
 </summary>
@@ -46,126 +46,72 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._lblRut">
+<member name="F:Cliente.Principal._TextBoxRut">
 <summary>
-Control lblRut.
+Control TextBoxRut.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._txtRut">
+<member name="F:Cliente.Principal._TextBoxDigito">
 <summary>
-Control txtRut.
+Control TextBoxDigito.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._lblDigito">
+<member name="F:Cliente.Principal._ButtonComprobar">
 <summary>
-Control lblDigito.
+Control ButtonComprobar.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._txtDigito">
+<member name="F:Cliente.Principal._LabelResultado">
 <summary>
-Control txtDigito.
+Control LabelResultado.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._btnComprobar">
+<member name="F:Cliente.Principal._TextBoxNombre">
 <summary>
-Control btnComprobar.
+Control TextBoxNombre.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._lblResultadoComprobar">
+<member name="F:Cliente.Principal._ButtonDesplegar">
 <summary>
-Control lblResultadoComprobar.
+Control ButtonDesplegar.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._lblResultado">
+<member name="F:Cliente.Principal._LabelNombres">
 <summary>
-Control lblResultado.
+Control LabelNombres.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Cliente.Home._lblNombre">
+<member name="F:Cliente.Principal._LabelApellidos">
 <summary>
-Control lblNombre.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._txtNombre">
-<summary>
-Control txtNombre.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._btnDesplegar">
-<summary>
-Control btnDesplegar.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._lblResultadoNombres">
-<summary>
-Control lblResultadoNombres.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._lblNombres">
-<summary>
-Control lblNombres.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._lblResultadoApellidos">
-<summary>
-Control lblResultadoApellidos.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:Cliente.Home._lblApellidos">
-<summary>
-Control lblApellidos.
+Control LabelApellidos.
 </summary>
 <remarks>
 Campo generado automáticamente.
